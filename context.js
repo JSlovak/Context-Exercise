@@ -1,7 +1,7 @@
 var Robot = function (name) {
   this.name = name;
 
-}
+};
 
 function add ( op1, op2 ) {
   this.name = this.name || "Humans";
@@ -17,14 +17,17 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
 
-// #2  
-console.log(  );
+console.log(add.call(10,20));
+
+// #2
+console.log(add.call(voltron, 10, 20));
 
 // #3
-console.log(  );
+console.log(add.apply(optimus,[20,30]));
 
 // #4
+function calculate
 
-console.log(  );
+
+console.log(add.bind(10,20));
