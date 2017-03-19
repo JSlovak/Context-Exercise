@@ -18,16 +18,15 @@ var wall_e = new Robot("Wall-E");
 
 // #1
 
-console.log(add.call(10,20));
+console.log(add(0,1));
 
 // #2
-console.log(add.call(voltron, 10, 20));
+console.log(add.call(voltron, 2, 3));
 
 // #3
 console.log(add.apply(optimus,[20,30]));
 
 // #4
-function calculate
-
-
-console.log(add.bind(10,20));
+var calculate = add.bind(bender);
+console.log(calculate("drinking", "beer"));
+//console.log(add.bind(10,20));
